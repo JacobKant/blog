@@ -16,5 +16,6 @@ collections:
     fields:
       - { name: path, label: Ссылка, widget: string }
       - { name: date, label: Дата, widget: date }
+      - { name: titleImage, label: Главная картинка, widget: image}
       - { name: title, label: Заголовок, widget: string }
       - { name: body, label: Тело статьи, widget: markdown }
