@@ -1,7 +1,11 @@
 backend:
   name: test-repo
 
-media_folder: static/assets
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 3cbb44108359e835c387
+
 public_folder: assets
 
 collections:
@@ -10,7 +14,7 @@ collections:
     folder: blog
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: path, label: Ссылка, widget: string }
+      - { name: date, label: Дата, widget: date }
+      - { name: title, label: Заголовок, widget: string }
+      - { name: body, label: Тело статьи, widget: markdown }
